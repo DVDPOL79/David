@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>mi primer booztrack</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+        #section1 {padding-top:50px; height:500px; color: #fff; background-color: #1E88E5}
+        #section2 {padding-top:50px; height:500px; color: #fff; background-color: #673ab7}
+        #section3 {padding-top:50px; height:500px; color: #fff; background-color: #ff9800}
+        #section41 {padding-top:50px; height:500px; color: #fff; background-color: #00bcd4}
+        #section42 {padding-top:50px; height:500px; color: #fff; background-color: #009688}
+    </style>
+</head>
+<body data spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">NombreDelSitio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#section1">Seccion 1</a></li>
+                <li><a href="#section2">Seccion 2</a></li>
+                <li><a href="#section3">Seccion 3</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Seccion 4 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#section41">Seccion 4 - 1</a></li>
+                        <li><a href="#section42">Seccion 4 - 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</nav>
+
+<div id="section1" class="container-fluid">
+    <h1>Seccion 1</h1>
+    <p>ADSI</p>
+    <p>Tecnologo en analisis y Sistemas de informacion</p>
+</div>
+<div id="section2" class="container-fluid">
+    <h1>Seccion 2</h1>
+    <p>MECDICE</p>
+    <p>Tecnologo en Mantenimiento de equipos de computo y cableado estructurado</p>
+</div>
+<div id="section3" class="container-fluid">
+    <h1>Seccion 3</h1>
+    <p>ADSI</p>
+    <p>Tecnologo en analisis y Sistemas de informacion</p>
+</div>
+<div id="section41" class="container-fluid">
+    <h1>Seccion 4 - 1</h1>
+    <p>MECDICE</p>
+    <p>Tecnologo en Mantenimiento de equipos de computo y cableado estructurado</p>
+</div>
+<div id="section1" class="container-fluid">
+    <h1>Seccion 4 - 2</h1>
+    <p>REDES</p>
+    <p>Tecnologo en redes de datos</p>
+</div>
+
+
+
+<div class="container">
+        <h2>Ejemplo Modal</h2>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Mostrar Modal
+</button>
+    <div class="modal fade" id="exampleModal" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          &times;
+        </button>
+        <h5 class="modal-title" id="exampleModalLiveLabel">Ejemplo modal</h5>
+      </div>
+      <div class="modal-body">
+        <p>Revisando que funciona el modal</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Tabla de Filtros</h2>
+  <p>Escriba algo en el campo de entrada para buscar en la tabla los nombres apellidos o correos electronicos</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Correo</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Andrea</td>
+        <td>Gonzales</td>
+        <td>aygonzales@example.com</td>
+      </tr>
+      <tr>
+        <td>Isabella</td>
+        <td>Montealegre</td>
+        <td>isam@mail.com</td>
+      </tr>
+      <tr>
+        <td>Juanjo</td>
+        <td>Monteahappy</td>
+        <td>juanjo@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Amparo</td>
+        <td>Acosta</td>
+        <td>amparito@hotmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Tenga en cuenta que comenzamos la busqueda en tbody evitar filtrar los encabzados de la tabla</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

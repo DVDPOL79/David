@@ -1,0 +1,54 @@
+header, section {
+	margin-top: 60px;
+	
+	marker-end: 10px;
+}
+header a {
+	float: right;
+	font-size: 20px;
+}
+header img {
+	float: left;
+}
+header button {
+	float: right;
+}
+
+
+#reloj { width: auto; height: 35px; padding: 5px 10px; 
+         font: bold 2.5em arial;
+         float: right; margin: 0.5em 5em 0em 0em; margin-bottom: 200px }
+
+#demo { width: auto; height: 60px; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: center;
+         float: right; margin: 1em 3em 1em 1em; }
+
+
+footer { width: 45%; height: 180px; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: center;
+         float: right; margin: 1em 3em 1em 1em; }
+
+footer1 { width: 45%; height: 180px; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: center;
+         float: left; margin: 1em  1em 1em; }
+
+footer img{
+	height: 40px
+}
+aside { width: auto; height: auto; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: left;
+         float: left; margin: 1em 3em 1em 1em; }
+
+aside img { height: 50px; }
+
+section {width: auto; height: auto; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: left;
+         float: left; margin: 1em 3em 1em 1em;}
+
+article {width: auto; height: auto; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: left;
+         float: left; margin: 1em 3em 1em 1em;}
+
+#registro { width: auto; height: auto; padding: 5px 10px; border: 1px solid black; 
+         font: bold 1.5em dotum, "lucida sans", arial; text-align: center;
+         float: right; margin: 1em 3em 1em 1em; }

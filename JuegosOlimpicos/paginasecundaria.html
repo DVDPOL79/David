@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Juegos Olimpicos</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="color: red;">
+    
+        <a class="navbar-brand" href="#">JuegosOlimpicos</a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#inci">Inicio</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Datos Basicos<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Definicion">Definicion </a></li>
+                        <li><a href="#origen">Origen</a></li>
+                        <li><a href="#deportes">Deportes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#carta">Carta OLimpica</a></li>
+                <li><a href="#llama">LLama Olimpica</a></li>
+                <li><a href="#redes">Nuestras Redes Sociales</a></li>
+            </ul>
+            
+        </div>
+    
+</div>
+</nav>
+    <div class="container">
+        <header id="inci">
+
+       <img src="imagenes/logo1.png" alt="logo" width="100" height="50">
+            
+    <button type="button" class="btn" data-toggle="collapse" data-target="#demo"><img src="imagenes/navegador.svg"></button>
+    <div id="demo" class="collapse">
+        Esta Pagina fue codificada con boostrap, html y
+        CSS por los aprendices del sena:
+        David Alejandro Caceres
+        Sergio Andres Cortez
+    </div>
+    <a href="file:///C:/Users/juan/Desktop/david/Sublime/JuegosOlimpicos/pagina%20principal.html">Pagina Juegos Olimpicos</a>
+    </header>
+
+    </div>
+    <hr>
+    <header>
+    <img src="imagenes/logo2.png" height="100">
+    <h1 style="font-size: 50px; margin-left: 400px; color:#827835;">TOKIO 2020</h1>
+    
+    <div class="container">
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#registro">REGISTRO</button>
+    <div id="registro" class="collapse">
+        <h2>Registrese aqui</h2>        
+    <form action="/action_page.php">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="Password"  class="form-control" id="pwd" placeholder="Enter Password" name="pwd">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember">Recuerdame</label>
+        </div>
+        <button type="submit" class="btn btn-default">Enviar</button>
+    </form>
+</div>
+</div>
+    <div class="container-fluid">
+        <div class="navbar">
+             <button type="button" class="btn-default" style="float: right;"><a href="#">ParaOlimpicos</a></button>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="float: right; overflow: 50%;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        </div>
+
+    </header>
+
+
+<div id="section1" class="container-fluid">
+    <div id="reloj">   
+    23 JULIO - 8 AGOSTO: JUEGOS OLIMPICOS                00 : 00 : 00
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+        function actual() {
+         fecha=new Date(); //Actualizar fecha.
+         hora=fecha.getHours(); //hora actual
+         minuto=fecha.getMinutes(); //minuto actual
+         segundo=fecha.getSeconds(); //segundo actual
+         if (hora<10) { //dos cifras para la hora
+             hora="0"+hora;
+             }
+         if (minuto<10) { //dos cifras para el minuto
+             minuto="0"+minuto;
+             }
+         if (segundo<10) { //dos cifras para el segundo
+             segundo="0"+segundo;
+             }
+         //devolver los datos:
+         mireloj = "23 JULIO - 8 AGOSTO: JUEGOS OLIMPICOS       "+hora+" : "+minuto+" : "+segundo; 
+         return mireloj; 
+         }
+
+         function actualizar() { //función del temporizador
+   mihora=actual(); //recoger hora actual
+   mireloj=document.getElementById("reloj"); //buscar elemento reloj
+   mireloj.innerHTML=mihora; //incluir hora en elemento
+     }
+setInterval(actualizar,1000); //iniciar temporizador
+    </script>
+
+
+</header>
+    <section id="datos">
+        <h1>Datos Basicos</h1>
+        <article>
+            <h1></h1>
+            <h2 id="Definicion">Definición</h2>
+            <p>Los juegos Olimpicos son el mayor evento deportivo internacional multidisciplinario en el que participan atletas de diversas partes del mundo. Los Juegos Olímpicos son considerados la principal competición del mundo deportivo, con más de doscientas naciones participantes. Existen dos tipos: los Juegos Olímpicos de Verano y los Juegos Olímpicos de Invierno, que se realizan con un intervalo de dos años, según <em>la Carta Olímpica.</em></p>
+        </article>
+                <article>
+                    <h1></h1>
+            <h2 id="origen"> Origen </h2>
+            <p>Durante los juegos, los conflictos entre las ciudades-estado participantes se posponían hasta la finalización de las competiciones deportivas. Este cese de las hostilidades fue conocido como paz o tregua olímpica. El origen de los Juegos Olímpicos está rodeada de misterio y leyenda. Según el relato del historiador griego Pausanias, el Dáctilo Heracles Ideo (no confundir con Heracles el hijo de Zeus) y cuatro de sus hermanos corrieron a Olimpia para entretener al recién nacido Zeus. Al ganar, Heracles se coronó con una corona de olivo y estableció la costumbre de celebrar la serie de eventos deportivos en honor a Zeus, cada cuatro años.</p>
+        </article>
+                <article>
+            <h1></h1>
+            <h2 id="deportes"> Deportes</h2>
+            <p>El programa olímpico consta de 35 deportes, 30 disciplinas y cerca de 400 competiciones. Por ejemplo, la lucha es un deporte olímpico que se divide en dos disciplinas: grecorromana y libre. Además, se divide en 14 competiciones masculinas y 4 femeninas.El programa de los Juegos Olímpicos de Verano incluye 26 deportes, mientras que el de los Juegos Olímpicos de Invierno cuenta con 15 deportes. El atletismo, la natación, la esgrima y la gimnasia artística son los únicos deportes olímpicos presentes en todas las ediciones.</p>
+        </article>
+    </section>
+    <aside>
+        <h1  id="carta">Carta Olímpica</h1>
+        <p>La Carta Olímpica es el documento y código que rige la organización, acción y operación del Movimiento Olímpico y establece las condiciones necesarias para la celebración de los Juegos Olímpicos.</p>
+        <img src="imagenes/aside2.jpeg" alt="Este es el logo" >
+        <h1 id="llama">Llama Olímpica</h1>
+        <p>La llama Olímpica es un símbolo de los Juegos Olímpicos.Conmemora el robo del fuego de los dioses por parte de Prometeo y su posterior entrega a la humanidad. Sus orígenes se remontan a la antigua Grecia, donde se mantenía un fuego ardiendo en las sedes de celebración de los Juegos Olímpicos Antiguos.</p>
+        <img src="imagenes/aside.png" alt="Este es el logo" >
+    </aside>
+    <footer1 id="redes">
+        <h1>Ver mas..</h1>
+        <ul>
+            <li><a href="https://www.sena.edu.co/">Sena</a></li>
+            <li><a href="https://www.facebook.com/davidalejandro.cacerespolania">Autor</a></li>
+            <li><a href="https://www.youtube.com/channel/UCTl3QQTvqHFjurroKxexy2Q">Canal oficial</a></li>
+            <li><a href="#">Inicio</a></li>
+        </ul>
+    </footer1>
+    <footer>
+        <a href="https://www.instagram.com/juegosolimpicos/?hl=es-la"> <img src="imagenes/foot.png" alt="Este es el logo"></a>
+        <a href="https://es-la.facebook.com/olympics/"><img src="imagenes/foot2.png" alt="Este es el logo" ></a>
+        <a href="https://twitter.com/Olympics"><img src="imagenes/foot3.png" alt="Este es el logo" ></a>
+        <h1> Redes Sociales</h1>
+        <p>David Caceres, Sergio Cortez - Aprendices Sena</p>
+    </footer>
+</div>
+<div id="paginas" class="container-fluid">
+    <ul class="pager">
+        <li><a href="pagina%20principal.html">Siguiente</a></li>
+    </ul>   
+
+</div>
+</body>
+</html>

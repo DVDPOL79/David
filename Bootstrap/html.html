@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>mi primer booztrack</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1>Hola Mundo</h1>
+	<p>Cambie el tamaño de la ventana del navegador para ver el efecto</p>
+	<p>Las columnas se apilaran una encima de la otra automaticamente cuando la pantalla tenga menos de 768 px de ancho</p>
+	<div class="row">
+
+		<div class="col-sm-4" style="background-color:lavender;">Columna1</div>
+		<div class="col-sm-4" style="background-color:lavenderblush;">Columna2</div>
+		<div class="col-sm-4" style="background-color:lavender;">Columna3</div>
+	</div>
+	<div class="row">
+
+		<div class="col-sm-4" style="background-color:lavender;">Columna1</div>
+		<div class="col-sm-8" style="background-color:lavenderblush;">Columna2</div>
+	</div>
+	<h1>Titulo h1 en Bootstrap(36px)</h1>
+	<h2>Titulo h2 en Bootstrap(30px)</h2>
+	<h3>Titulo h3 en Bootstrap(24px)</h3>
+	<h4>Titulo h4 en Bootstrap(18px)</h4>
+	<h5>Titulo h5 en Bootstrap(14px)</h5>
+	<h6>Titulo h6 en Bootstrap(12px)</h6>
+	<p></p>
+	<h1>Texto Secundario</h1>
+	<p>Use el elemento de la siguiente marca de texto <mark> "Hola David"</mark> si lo pudiste apreciar?</p>
+	<p></p>
+	<h1>Abreviatura</h1>
+	<p>El elemento abbr se usa pafra marcar una abreviatura o acronimo:</p>
+	<p>El <abbr title="World Wide Web">WWW</abbr> red de redes...</p>
+	<p></p>
+	<h1>Miremos un Blockquotes</h1>
+	<blockquote>
+		<p>El Blockquote presenta la informacion de la siguiente manera:</p>
+		<footer>Elaborado por: Andrea Yaneth Gonzales</footer>
+	</blockquote>
+
+	<h1>Listas</h1>
+	<p>El elemento que indica una lista </p>
+	<dl>
+		<dt>Café</dt>
+		<dd>Bebida Caliente</dd>
+		<dt>Leche</dt>
+		<dd>Bebida Fria</dd>
+	</dl>
+
+	<h1>Entradas de Teclado</h1>
+	<p>Para indicar la entrada que normalmente se ingresa atraves del teclado</p>
+	<p>Use <kbd>ctrl + p</kbd>Para abrir el cuadro de dialogo para imprimir</p>
+
+	<h1>varias lineas de codigo</h1>
+	<p>Para varias lineas de codigo, us el elemento pre:</p>
+	<pre>
+		Texto en un elemento previo
+		se muestra en un acho fijo
+		fuente, y conserva 
+		ambos espacios y 
+		saltos de linea
+	</pre>
+
+	<h2>Colores Contextuales</h2>
+	<p>Utilice las clases contextuales para proporcionar "el signidicado a traves del color"</p>
+	<p class="text-muted">Este texto esta silenciado</p>
+	<p class="text-primary">Este texto es importante </p>
+	<p class="text-success">Este texto indica exito</p>
+	<p class="text-info">Este texto representa alguna informacion</p>
+	<p class="text-warning">Este texto representa una advertencia</p>
+	<p class="text-danger">Este texto representa peligro</p>
+
+	<h2>Tabla Basica</h2>
+	<p>Se dezplaza horizontalmente para que quede responsiva</p>
+	<div class="table-reponsive"></div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Nombres</th>
+				<th>Apellidos</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>David</td>
+				<td>Caceres</td>
+				<td>Dacaceres@misena.edu</td>
+			</tr>
+			<tr>
+				<td>Luis</td>
+				<td>Ospina</td>
+				<td>luisos787@misena.edu.co</td>
+			</tr>
+			<tr>
+				<td>Daniela</td>
+				<td>Oviedo</td>
+				<td>Danio2003@misena.edu.co</td>
+			</tr>
+		</tbody>
+	</table>	
+
+	<h2>Esquinas redondeadas</h2>
+	<p>la clase .img-redondeada redondea cualquier imagen</p>
+	<img src="logo.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+
+	<h2>Circulo</h2>
+	<p>la clase .img-circular circle cualquier imagen</p>
+	<img src="logo.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+
+	<h2>miniatura</h2>
+	<p>la clase .img-thumbnail minituariza cualquier imagen</p>
+	<img src="logo.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+
+	<h2>responsiva</h2>
+	<p>la clase .img-responsive convierte responsiva cualquier imagen</p>
+	<img src="logo.jpg" class="img-responsive" alt="Chania" width="304" height="236">
+
+
+	<h2>Galeria de imagenes</h2>
+	<p>la clase .img-thumbnail un relleno gris</p>
+	<p>la clase .img-caption cre auna galeria</p>
+	<p>Haga clic en las imagenes</p>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<a href="#" target="_blank">
+					<img src="logo.jpg" alt="lights" style="width: 100%">
+					<div class="caption">
+						<p>Grafica 1</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<a href="#" target="_blank">
+					<img src="logo.jpg" alt="nature" style="width: 100%">
+					<div class="caption">
+						<p>Grafica 2</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<a href="#" target="_blank">
+					<img src="logo.jpg" alt="Fjords" style="width: 100%">
+					<div class="caption">
+						<p>Grafica 3</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<h2>tamaños Well</h2>
+	<div class="well well-sm"> well pequeño</div>
+	<div class="well">Well mediano</div>
+	<div class="well well-lg">Well Grande</div>
+
+	<h2>Alertas</h2>
+	<div class="alert alert-success">
+		<strong>Exitos!</strong> Este cuadro de alerta significa una accion exitosa o positiva
+	</div>
+	<div class="alert alert-info">
+		<strong>Informacion!</strong> Este cuadro de alerta indica una cambio o accion informativa neutral
+	</div>
+	<div class="alert alert-warning">
+		<strong>Advertencia!</strong> Este cuadro de alerta indica una advertencia que podria necesitar atencion
+	</div>
+	<div class="alert alert-danger">
+		<strong>Peligro!</strong> Este cuadro de alerta indica una accion peligrosao otencialmente negativa
+	</div>
+		
+	<h2>Botones</h2>
+	<button type="button" class="btn">Normal</button>
+	<button type="button" class="btn btn-default">Defecto</button>
+	<button type="button" class="btn btn-primary">Primario</button>
+	<button type="button" class="btn btn-success">Exito</button>
+	<button type="button" class="btn btn-info">Informacion</button>
+	<button type="button" class="btn btn-warning">Advertencia</button>
+	<button type="button" class="btn btn-danger">Peligro</button>
+	<button type="button" class="btn btn-link">Enlazar</button>
+
+	<h2>Tamaños Botones</h2>
+	<button type="button" class="btn btn-success btn-lg">Exito</button>
+	<button type="button" class="btn btn-info">Informacion</button>
+	<button type="button" class="btn btn-warning btn-sm">Advertencia</button>
+
+	<h2>Nivel de bloque</h2>
+	<button type="button" class="btn btn-primary btn-block">Boton 1</button>
+	<button type="button" class="btn btn-default btn-block">Boton 2</button>
+
+	<h2>Nivel de bloque grande</h2>
+	<button type="button" class="btn btn-primary btn-lg btn-block">Boton 1</button>
+	<button type="button" class="btn btn-default btn-lg btn-block">Boton 2</button>
+
+	<h2>Nivel de bloque pequeño</h2>
+	<button type="button" class="btn btn-primary btn-sm btn-block">Boton 1</button>
+	<button type="button" class="btn btn-default btn-sm btn-block">Boton 2</button>
+
+	<h2>Estados de Botones</h2>
+	<button type="button" class="btn btn-danger">Boton</button>
+	<button type="button" class="btn btn-danger disabled">Boton desactivo</button>
+
+	<div class="container">
+		<h2>Grupos de Botones</h2>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Sony <span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="https://www.instagram.com/?hl=es">Instagram</a></li>
+						<li><a href="https://www.facebook.com/">Facebook</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<h2>Iconos glycon</h2>
+	<p>Icono de sobre: <span class="glyphicon glyphicon-envelope"></span></p>
+	<p>Icono de sobre como enlace:
+		<a href="https://www.google.com/intl/es-419/gmail/about/"><span class="glyphicon glyphicon-envelope"></span></a>
+	</p>
+	<p>Icono de Busqueda: <span class="glyphicon glyphicon-search"></span></p>
+	<p>Icono de Busqueda como boton:
+		<button type="button" class="btn btn-default">
+			<span class="glyphicon glyphicon-search"></span> Search
+		</button>
+	</p>
+	<p>Icono de Busqueda como boton de estilo: 
+		<button type="button" class="btn btn-info">
+			<span class="glyphicon glyphicon-search"></span> Search
+		</button>
+	</p>
+	<p>Icono de impresion: <span class="glyphicon glyphicon-print"></span></p>
+	<p>Icono de Impresion como boton de enlace de estilo:
+		<a href="https://support.google.com/chrome/answer/1069693?co=GENIE.Platform%3DDesktop&hl=es-419" class="btn btn-success btn-lg">
+			<span class="glyphicon glyphicon-print"></span> Print
+			</a>
+	</p>
+
+	<h2>Barra de Progreso etiqueta</h2>
+	<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+			70%
+		</div>
+	</div>
+
+		<h2>Barra de Progreso de colores</h2>
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+			40% Completado (Exitosa)
+		</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+			20% (Faltan 20 min para completar la carga)(Exitosa)
+		</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+			10% (advertencia es posible que no se complete la carga)
+		</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+			100% (Peligro ya ha terminado la carga)
+		</div>
+	</div>
+
+	<h2>Barra de progreso animada</h2>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+			40% (barra activa)
+		</div>	
+
+		
+	<div class="container">
+    <h2>Pestañas dinamicas</h2>
+    <p>Para hacer que las pestañas sean conmutables</p>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+    </ul>
+
+    
+</div>
+	
+
+</div>
+</body>
+</html>
