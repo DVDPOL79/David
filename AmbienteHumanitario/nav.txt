@@ -1,0 +1,43 @@
+	<nav>
+		<div class="container-fluid"  style="text-align: left;">
+		<ul class="nav nav-tabs">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="#"><img src="img/logo.png" style="width:15%;"></a></li>
+				</ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">CARIDAD</a></li>
+				<li><a href="#">AYUDA ANIMALES</a></li>
+				<li><a href="#">AYUDA NATURALEZA</a></li>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Tu cuenta</a></li>
+				</ul>
+			</ul>
+			</div>
+		
+	</nav>
+
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Inicio</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Viveres</a></li>
+					<li><a href="#">Contactos</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Tu cuenta</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carro de Compras</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
