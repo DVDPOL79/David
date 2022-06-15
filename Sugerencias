@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ambiente Humanitario</title>
+</head>
+<body>
+
+<header>
+    <div class="menu">
+     <!--<img class="logo" src="img/logo.png" alt="logo">--> 
+      <nav>
+          <ul class="list-nav">
+            <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="#"><i class="fa-solid fa-store"></i> Productos</a>
+            <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Donaciones</a></li>
+            <li><a href="#"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <ASIDE class="form" id="formulario"> 
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Contactanos</h1>
+        <h3>Tienes alguna sugerencia? Diligenciela en el siguiente formulario. </h3>
+
+
+          <form action="http://localhost/reg.php/" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Telefono
+                  </label>
+                    <input type="number" name="introducir_telefono" id="telefono" placeholder="Escribe tu telefono">
+                </p>    
+              
+                  
+              
+                
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aqui tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar" onclick="entregado()"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+     
+
+  </ASIDE>
+
+  <SECTION>
+      <div class="contact_form">
+        <h1>Encuentranos</h1>
+        <br>
+        <br>
+        <br>
+
+        <br>
+            <div class="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7955.671230569496!2d-75.20023212071526!3d4.441679918779033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1652668840111!5m2!1ses!2sco" width="420" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+           <br>
+        <h3>Cualquier otra informacion que necesites hacerla saber en el formulario de Sugerencias</h3>
+        <br>
+        <br>
+      </div>
+  </SECTION>
+
+<footer>
+    <hr>
+    <div class="foot">
+        <img class="person" src="https://miracomosehace.com/wp-content/uploads/2020/04/caricatura-de-perfil-de-instagram.jpg">
+        <div class="redes">
+            p
+        </div>
+    </div>
+</footer>
+</body>
+<style type="text/css">
+    aside,section{
+        width: 50%;
+        float: left;
+    }
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #239894b6;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.logo{
+    width: 250px;
+    height: 200px;
+    float: left;
+    padding: 8px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 15px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #194093;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background-color: blue;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+body{
+    background-color: #d6fffb; 
+}
+hr{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+.person{
+    width: 50px;
+}
+
+.map{
+    width: 420px;
+  border-radius: 5px;
+  border-style: solid; 
+  border-width: 5px; 
+  border-color: #194093; 
+}
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #a9e6f5; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #a9e6f5; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #a9e6f5; 
+  border-color: #a9e6f5; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: BLACK; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #194093;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+</style>
+<script type="text/javascript">
+    function entregado() {
+        alert("su sugerencia a sido entregada")
+    }
+    
+</script>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problema</title>
+</head>
+<body>
+<?php
+
+ $link = mysql_connect("localhost","root","") or die("<h2>No se encuentra el servidor<h2>");
+ $db = mysql_select_db("sugerencias",$link) or die("<h2> Error de base<h2>");
+
+ $nombre=$_POST['introducir_nombre'];
+ $email=$_POST['introducir_email'];
+ $telefono=$_POST['introducir_telefono'];
+ $mensaje=$_POST['introducir_mensaje']; 
+
+ mysql_query("INSERT INTO datos VALUES ('','$nombre','$email','$telefono','$mensaje')",$link) or die("<h2>Error de envio<h2>");
+
+ echo '
+ <h2> AQUI CREO UN MENSAJE <h2>
+ <a href="Contacto.html" >Regresar</a>
+ ';
+
+?>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problema</title>
+</head>
+<body>
+ <?php 
+ $conexion = mysqli_connect("localhost","root","","base1") or die("Problemas de conexion");
+
+ mysqli_query($conexion,"insert into alumnos(nombre,mail,codigocurso) values 
+
+ 	('$_REQUEST[nombre]','$_REQUEST[mail]','$_REQUEST[codigocurso]')")
+ 	or die("Problemas en el select".mysqli_error($conexion));
+
+ 	mysqli_close($conexion);
+
+ 	echo "El alumno fue registrado";
+  ?>
+</body>
+</html>
+
